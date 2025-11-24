@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEEP GROOVE</title>
+
+  <!-- Google Fonts: BIZ UDゴシック -->
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'BIZ UDGothic', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('背景.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f0f0f0;
+      line-height: 1.6;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: -1;
+    }
+
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 2rem;
+      text-align: center;
+      color: #ffffff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      border-left: 4px solid #ffffff;
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .column {
+      flex: 1 1 300px;
+      background: rgba(0,0,0,0.5);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    /* カード風リンク */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .card {
+      flex: 1 1 200px;
+      background: rgba(0,0,0,0.6);
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+    .card a {
+      color: #00ffff;
+      text-decoration: none;
+      display: block;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.8);
+    }
+
+    p {
+      color: #f0f0f0;
+    }
+
+    .next-event {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #ffff66;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      color: #cccccc;
+    }
+
+    @media(max-width: 700px){
+      .columns {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.JPG"
+         alt="DEEP GROOVE ロゴ"
+         style="max-width:400px; width:100%; height:auto; display:block; margin:0 auto 1rem;">
+    <h1>DEEP GROOVE</h1>
+    <p>Focused on Hiphop music  Free style SOLO BATTLE</p>
+    <p class="next-event">NEXT 2026/2/7 sat ..coming soon</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>What is DEEP GROOVE</h2>
+      <div class="columns">
+        <div class="column">
+          <p>
+            ダンスと音楽を同時に学べる WS と Focused on Hiphop music の Free style SOLO BATTLE を開催。<br>
+            WS は 2018年から始まり、東北から沖縄まで日本各地で開催中。<br>
+            その土地で生きる人たちのカルチャーや関係性に合わせた WS を届けている。<br>
+            バトルはラウンドごとに Hiphop music のカテゴリが変わり、事前に公開される仕組み。<br>
+            音楽への想像力や知識を深めながら、ダンサーの積み重ねから出る渋さ、時間をかけて磨いたもの、知識が光る瞬間を引き出す場所を創り続けている。
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            What is DEEP GROOVE?<br>
+            We hold workshops where you can learn dance and music at the same time, and also hold Free style SOLO BATTLES which are Focused on Hiphop music. The workshops started in 2018 and are being held all over Japan, from Tohoku to Okinawa. We deliver workshops that are tailored to the culture and relationships of the people living in that area.<br>
+            The category of Hiphop music changes for each round of the battle, and is announced in advance.<br>
+            We continue to create a place that brings out the sophistication that comes from the dancers' experience, the quality of things that have been polished over time, and the moments when their knowledge shines, while deepening their imagination and knowledge of music.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO album -->
+    <section id="albums">
+      <h2>PHOTO album</h2>
+      <div class="card-container">
+        <div class="card">
+          <a href="https://photos.app.goo.gl/wXWeeJnrw7AodKzi8" target="_blank">
+            <img src="2022.jpg" alt="#1 DeepGroove 2022/4/2">
+            #1 DeepGroove 2022/4/2
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://photos.app.goo.gl/WhQj7vjSu9q3YA4m7" target="_blank">
+            <img src="2023.jpg" alt="#2 DeepGroove 2023/2/4">
+            #2 DeepGroove 2023/2/4
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://photos.app.goo.gl/oKtpt1wvSmgUjiMTA" target="_blank">
+            <img src="2024.jpg" alt="#3 DeepGroove 2024/2/3">
+            #3 DeepGroove 2024/2/3
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://photos.app.goo.gl/AQVpV7gXg4UfpkMX9" target="_blank">
+            <img src="2025.jpg" alt="#4 DeepGroove 2025/2/22">
+            #4 DeepGroove 2025/2/22
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOURNAMENT VIDEO -->
+    <section id="videos">
+      <h2>TOURNAMENT VIDEO</h2>
+      <div class="card-container">
+        <div class="card">
+          <a href="https://youtube.com/playlist?list=PLD-7T2lX-rYQ-lFbBlCjlZhbim7y85N11" target="_blank">
+            <img src="2022.jpg" alt="#1 DeepGroove 2022/4/2">
+            #1 DeepGroove 2022/4/2
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://youtube.com/playlist?list=PLD-7T2lX-rYTpjzaSgDl8MouVDDScudbC" target="_blank">
+            <img src="2023.jpg" alt="#2 DeepGroove 2023/2/4">
+            #2 DeepGroove 2023/2/4
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://youtube.com/playlist?list=PLD-7T2lX-rYSF5FQK_TH9UeAW9bCRDfYl" target="_blank">
+            <img src="2024.jpg" alt="#3 DeepGroove 2024/2/3">
+            #3 DeepGroove 2024/2/3
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://youtube.com/playlist?list=PLD-7T2lX-rYQMN5MDyoDid-hXEc6vvY7z" target="_blank">
+            <img src="2025.jpg" alt="#4 DeepGroove 2025/2/22">
+            #4 DeepGroove 2025/2/22
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © ダンスイベント
+  </footer>
+</body>
+</html>
